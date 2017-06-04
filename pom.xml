@@ -30,6 +30,7 @@
         </pluginRepository>
     </pluginRepositories>
     <build>
+        <finalName>shop</finalName>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -77,18 +78,6 @@
                 <version>2.1.1</version>
             </plugin>
 
-            <!--tomcat插件-->
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <url>http://127.0.0.1:8080/manager/text</url>
-                    <server>tomcat8</server>
-                    <path>/jshop</path>
-                    <!-- <URIEncoding>UTF-8</URIEncoding> -->
-                </configuration>
-            </plugin>
         </plugins>
     </build>
     <properties>
